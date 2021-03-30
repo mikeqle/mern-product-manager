@@ -84,3 +84,13 @@ img {
 hr {
   margin: 25px;
 }
+
+li {
+  list-style-type:none;
+  text-align: center;
+  padding: 10px;
+}
+
+p {
+  text-align: center;
+}

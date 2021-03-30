@@ -35,7 +35,7 @@ const ProductForm = () => {
                 <label>Description</label>
                 <input type="text" value={description  || ""} onChange={(e) => setDescription(e.target.value) } />
             </p>
-            <input type="submit" value="Create" />
+            <button type="submit">Create</button>
         </form>
     );
 };
