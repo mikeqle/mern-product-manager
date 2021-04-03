@@ -25,6 +25,8 @@ module.exports = {
         .catch(err => res.json({ message: "Something went wrong on updateProduct", error: err }));
     },
     deleteProduct: (req, res) => {
+        console.log(req.params.id);
+
         Product.findByIdAndDelete(req.params.id)
             .then((deletedProduct) => res.json(deletedProduct))
             .catch(err => res.json({ message: "Something went wrong on deleteProduct", error: err }));
